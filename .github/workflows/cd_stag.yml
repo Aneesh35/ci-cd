@@ -23,5 +23,5 @@ jobs:
             git pull
             pnpm install
             pnpm run build
-            pm2 restart pnpm run start
+            pm2 restart pnpm
     
