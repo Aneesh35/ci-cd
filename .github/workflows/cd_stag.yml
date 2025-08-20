@@ -28,4 +28,6 @@ jobs:
             nvm use 20
             pnpm install
             pnpm run build
-            pm2 restart pnpm
+            pm2 restart backend
+            pm2 restart frontend  
+            pm2 restart web-socket 
