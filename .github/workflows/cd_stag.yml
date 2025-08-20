@@ -19,8 +19,10 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            echo "Running on host:"
+            uname -a
             cd ci-cd
             git pull
             pnpm install
             pnpm run build
-            pm2 restart pnpm    
+            pm2 restart pnpm  
